@@ -12,13 +12,14 @@
 * AJ1-3のグリフを網羅しています。すべて字形パスがない空グリフです。
 * 禁止：グリフを削除したり追加したりしてはいけません。
 * 禁止：OpenTypeフィーチャーを設定してはいけません。
-    * GSUBはGlyphsの自動生成にまかせてください。
+    * GlyphsがGSUBを自動生成するのでそれにまかせてください。
     * Glyphsが使用しているGSUBファイルは間違っているので、「[GlyphsのAJ1の問題と対処 - 1. GSUB編](https://gist.github.com/monokano/edff98aabdee6c99c54f1107c62cd2ef)」の対処方法でGSUBファイルを差し替えてください。
 * 禁止：glyphOrderを編集してはいけません。
     * glyphOrderでCID順に並ぶようにしています。つまり（9353までは）GlyphsのIDイコールCIDです。
-* .rotatグリフにはベースグリフのコンポーネントを配置してあります。
-    * [Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vrt2 VertWidth」でvertWidthを設定すると良いでしょう。
-* 文字コードはAJ1-3の規格に合わせています。［グリフ情報を更新］をするとGlyphs独自の文字コード割り当てに変更されますが、書き出したフォントはAJ1-3の規格に合わせた文字コード割り当てになるので、［グリフ情報を更新］をしても無意味です。
+* 禁止：［グリフ情報を更新］をしてはいけません。
+    * 文字コードはAJ1-3の規格に合わせています。［グリフ情報を更新］を実行するとグリフ名が変更されてしまいます。
+* .rotatグリフにはベースグリフをコンポーネントとして配置してあります。
+    * [Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」でvertWidthを設定すると良いでしょう。
 * GlyphsはAJ1用のnice nameをサイレントで変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください。
     * バージョンが異なっても、テンプレートをそのままフォント書き出しをしてエラーにならなければ大丈夫です。
 * 書き出されたフォントにはROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
