@@ -9517,11 +9517,15 @@ name = "Default Layer Width";
 value = "1000";
 },
 {
+name = DisableAllAutomaticBehaviour;
+value = 1;
+},
+{
 name = note;
 value = "AJ1-3 (UniJIS2004) from Glyphs2.6.1-1230";
 }
 );
-date = "2019-07-27 12:10:39 +0000";
+date = "2019-08-16 08:30:14 +0000";
 disablesNiceNames = 1;
 familyName = "New Font StdN";
 fontMaster = (

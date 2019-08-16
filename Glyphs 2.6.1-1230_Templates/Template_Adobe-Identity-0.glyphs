@@ -26,9 +26,13 @@ value = (
 {
 name = "Default Layer Width";
 value = "1000";
+},
+{
+name = DisableAllAutomaticBehaviour;
+value = 1;
 }
 );
-date = "2019-07-27 12:04:03 +0000";
+date = "2019-08-16 08:31:26 +0000";
 familyName = "New Font AI0";
 fontMaster = (
 {
