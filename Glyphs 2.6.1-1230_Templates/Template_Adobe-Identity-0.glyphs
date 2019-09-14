@@ -17,6 +17,13 @@ space
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+49
+);
+},
+{
 name = codePageRanges;
 value = (
 1252,
@@ -32,7 +39,7 @@ name = DisableAllAutomaticBehaviour;
 value = 1;
 }
 );
-date = "2019-08-16 08:31:26 +0000";
+date = "2019-09-14 05:06:13 +0000";
 familyName = "New Font AI0";
 fontMaster = (
 {
