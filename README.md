@@ -24,8 +24,11 @@
     * ［グリフ情報を更新］を実行するとグリフ名が変更されてしまいます。
 * 書き出されたフォントにはROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
 
+
 ## 更新履歴
+#### 2019.12.17
+「Templates_AJ1_Glyphs2.6.3-1271」を追加。なお、Glyphs2.6.2でAJ1用nice nameの一部が変更されています。
 #### 2019.9.14　Template_Adobe-Identity-0
-Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加した。
+Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加。
 #### 2019.8.16
 フォント書き出し時に結合文字の文字コードを持つグリフの幅をGlyphsが自動的にゼロにしてしまう仕様を回避するため、マスターのカスタムパラメータに「DisableAllAutomaticBehaviour」を追加した。
