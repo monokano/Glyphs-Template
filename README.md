@@ -7,28 +7,35 @@
     * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持しなければいけません。
 
 
-### Template_Adobe-Japan1
-* Adobe-Japan1のテンプレートです。
-* グリフを網羅しています。すべて字形パスがない空グリフです。
-* .rotatグリフにはベースグリフをコンポーネントとして配置してあります。
-    * [Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」でvertWidthを設定すると良いでしょう。
-* GlyphsはAJ1用のnice nameをサイレントで変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください。
-    * バージョンが異なっても、テンプレートをそのままフォント書き出しをしてエラーにならなければ大丈夫です。
+### Templates_AJ1-3(StdN)
+* Adobe-Japan1-3(StdN)のテンプレートです。
+    * 要 Glyphs 2.6.2 以降
+    * GlyphsはAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください。
+* グリフを網羅しています（令和グリフは未対応）。
+        * グリフ幅を 1000/600/500 の3つに分けています。
+        * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ。
+* 「〓」をコンポーネント配置してあります（空白文字を除く）。        
+* .rotatグリフにはベースグリフをコンポーネント配置してあります。
+    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。
+    * ただし、vertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。
+    * vertWidthは、[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で一括に設定できます。
+#### Templates_AJ1-3の注意点
 * 禁止：グリフを削除したり追加したりしてはいけません。
+* 禁止：グリフ名を変更してはいけません。
 * 禁止：OpenTypeフィーチャーを設定してはいけません。
-    * フォント書出時にGlyphsがGSUBを自動的に仕込んでくれるので、それにまかせてください。
-    * Glyphsが使用しているGSUBファイルは間違っているので、1-4以降は「[GlyphsのAJ1の問題と対処 - 1. GSUB編](https://gist.github.com/monokano/edff98aabdee6c99c54f1107c62cd2ef)」の対処方法でGSUBファイルを差し替えてください。
+    * フォント書出時にGlyphsが自動的に仕込むので、それにまかせてください。
 * 禁止：glyphOrderを編集してはいけません。
     * glyphOrderでCID順に並ぶようにしています。
 * 禁止：［グリフ情報を更新］をしてはいけません。
     * ［グリフ情報を更新］を実行するとグリフ名が変更されてしまいます。
 * 書き出されたフォントにはROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
 
-
 ## 更新履歴
+#### 2019.9.14
+Adobe-Japan1用を1-3のみにして、グリフに「〓」を仕込んだ。
 #### 2019.12.17
 「Templates_AJ1_Glyphs2.6.3-1271」を追加。なお、Glyphs2.6.2でAJ1用nice nameの一部が変更されています。
 #### 2019.9.14　Template_Adobe-Identity-0
-Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加。
+Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加した。
 #### 2019.8.16
 フォント書き出し時に結合文字の文字コードを持つグリフの幅をGlyphsが自動的にゼロにしてしまう仕様を回避するため、マスターのカスタムパラメータに「DisableAllAutomaticBehaviour」を追加した。
