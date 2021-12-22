@@ -9,8 +9,7 @@
 
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレートです。
-    * 要 Glyphs 2.6.2 以降
-    * GlyphsはAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください。
+    * GlyphsはAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。
 * グリフを網羅しています（令和グリフは未対応）。
     * グリフ幅を 1000/600/500 の3つに分けています。
     * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ。
@@ -36,8 +35,28 @@
 * 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです。
 * 要件等はTemplates_AJ1-3(StdN)と同じ。
 
+## Glyphs2 ダウンロードリンク
+[https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
+[https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip](https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip)
+[https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
+[https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
+[https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
+[https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip)
+
+## GlyphsのAJ1用アプリ
+* [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair%20AJ1%20Name%20Diff-1.0.0-8.tbz2)
+	* AJ1用グリフ名がバージョンによって異なるのを修繕する（glyphsファイルを書き替える）
+* [Detect AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Detect%20AJ1%20Name%20Diff-1.0.0-6.tbz2)
+	* AJ1用グリフ名がバージョンによって異なる差分を調べる
+
 
 ## 更新履歴
+#### 2021.12.22
+Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した。
+Glyphs3用のAdobe-Identity-0テンプレートを追加した。
+Glyphs2のダウンロードリンクを追加した。
+GlyphsのAJ1用アプリを追加した。
+
 #### 2020.11.20
 ファイル名に使用可能なGlyphsバージョンの範囲を明記した。
 

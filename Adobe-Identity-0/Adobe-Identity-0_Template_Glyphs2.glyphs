@@ -1,0 +1,182 @@
+{
+.appVersion = "1230";
+customParameters = (
+{
+name = vendorID;
+value = UKWN;
+},
+{
+name = ROS;
+value = "Adobe-Identity-0";
+},
+{
+name = glyphOrder;
+value = (
+.notdef,
+space
+);
+},
+{
+name = unicodeRanges;
+value = (
+0,
+49
+);
+},
+{
+name = codePageRanges;
+value = (
+1252,
+932
+);
+},
+{
+name = "Default Layer Width";
+value = "1000";
+},
+{
+name = DisableAllAutomaticBehaviour;
+value = 1;
+}
+);
+date = "2019-09-14 05:06:13 +0000";
+familyName = "New Font AI0";
+fontMaster = (
+{
+ascender = 880;
+capHeight = 760;
+customParameters = (
+{
+name = hheaAscender;
+value = 880;
+},
+{
+name = hheaDescender;
+value = -120;
+},
+{
+name = hheaLineGap;
+value = 500;
+},
+{
+name = vheaVertAscender;
+value = 500;
+},
+{
+name = vheaVertDescender;
+value = -500;
+},
+{
+name = vheaVertLineGap;
+value = 500;
+}
+);
+descender = -120;
+id = "AODEWCWT-RYM3-6S2H-YGKD-BAMV0KWXFSSX";
+xHeight = 380;
+}
+);
+glyphs = (
+{
+glyphname = .notdef;
+lastChange = "2019-02-01 03:49:45 +0000";
+layers = (
+{
+layerId = "AODEWCWT-RYM3-6S2H-YGKD-BAMV0KWXFSSX";
+paths = (
+{
+closed = 1;
+nodes = (
+"863 -120 LINE",
+"863 880 LINE",
+"137 880 LINE",
+"137 -120 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"172 844 LINE",
+"828 844 LINE",
+"828 -84 LINE",
+"172 -84 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"500 349 LINE",
+"668 108 LINE",
+"698 128 LINE",
+"522 380 LINE",
+"698 632 LINE",
+"668 652 LINE",
+"500 411 LINE",
+"332 652 LINE",
+"302 632 LINE",
+"478 380 LINE",
+"302 128 LINE",
+"332 108 LINE"
+);
+}
+);
+width = 1000;
+}
+);
+note = Full;
+},
+{
+glyphname = space;
+lastChange = "2019-03-15 01:27:56 +0000";
+layers = (
+{
+layerId = "AODEWCWT-RYM3-6S2H-YGKD-BAMV0KWXFSSX";
+width = 333;
+}
+);
+note = Proportional;
+unicode = "0020,00A0";
+},
+{
+glyphname = X;
+lastChange = "2019-02-01 03:48:55 +0000";
+layers = (
+{
+layerId = "AODEWCWT-RYM3-6S2H-YGKD-BAMV0KWXFSSX";
+paths = (
+{
+closed = 1;
+nodes = (
+"67 0 LINE",
+"300 332 LINE",
+"533 0 LINE",
+"600 0 LINE",
+"333 380 LINE",
+"600 760 LINE",
+"533 760 LINE",
+"300 428 LINE",
+"67 760 LINE",
+"0 760 LINE",
+"267 380 LINE",
+"0 0 LINE"
+);
+}
+);
+width = 600;
+}
+);
+unicode = 0058;
+}
+);
+instances = (
+{
+instanceInterpolations = {
+"AODEWCWT-RYM3-6S2H-YGKD-BAMV0KWXFSSX" = 1;
+};
+name = Regular;
+}
+);
+unitsPerEm = 1000;
+versionMajor = 1;
+versionMinor = 0;
+}
