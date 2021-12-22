@@ -36,12 +36,12 @@
 * 要件等はTemplates_AJ1-3(StdN)と同じ。
 
 ## Glyphs2 ダウンロードリンク
-[https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
-[https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip](https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip)
-[https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
-[https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
-[https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
-[https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip](https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip)
 
 ## GlyphsのAJ1用アプリ
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair%20AJ1%20Name%20Diff-1.0.0-8.tbz2)
@@ -52,10 +52,7 @@
 
 ## 更新履歴
 #### 2021.12.22
-Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した。
-Glyphs3用のAdobe-Identity-0テンプレートを追加した。
-Glyphs2のダウンロードリンクを追加した。
-GlyphsのAJ1用アプリを追加した。
+Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した。Glyphs3用のAdobe-Identity-0テンプレートを追加した。Glyphs2のダウンロードリンクを追加した。GlyphsのAJ1用アプリを追加した。
 
 #### 2020.11.20
 ファイル名に使用可能なGlyphsバージョンの範囲を明記した。
