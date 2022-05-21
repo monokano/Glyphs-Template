@@ -9,7 +9,7 @@
 
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレートです。
-    * GlyphsはAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。
+    * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。下記のアプリ「Repair AJ1 Name Diff」でAJ1用グリフ名の修繕は可能です。
 * グリフを網羅しています（令和グリフは未対応）。
     * グリフ幅を 1000/600/500 の3つに分けています。
     * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ。
@@ -41,13 +41,13 @@
 * [https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1357.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
 
 ## GlyphsのAJ1用アプリ
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair%20AJ1%20Name%20Diff-1.0.0-8.tbz2)
-	* AJ1用グリフ名がバージョンによって異なるのを修繕する（glyphsファイルを書き替える）
+	* Glyphsのバージョンによって異なるAJ1用グリフ名を修繕する（glyphsファイルを書き替える）
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Detect%20AJ1%20Name%20Diff-1.0.0-6.tbz2)
-	* AJ1用グリフ名がバージョンによって異なる差分を調べる
+	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
 
 
 ## 更新履歴
