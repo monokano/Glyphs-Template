@@ -43,9 +43,9 @@
 * [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
 
 ## GlyphsのAJ1用アプリ
-* [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair%20AJ1%20Name%20Diff-1.0.0-8.tbz2)
+* [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名を修繕する（glyphsファイルを書き替える）
-* [Detect AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Detect%20AJ1%20Name%20Diff-1.0.0-6.tbz2)
+* [Detect AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Detect-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
 
 
