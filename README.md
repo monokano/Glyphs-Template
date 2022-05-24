@@ -10,24 +10,22 @@
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレートです。
     * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。下記のアプリ「Repair AJ1 Name Diff」でAJ1用グリフ名の修繕は可能です。
-* グリフを網羅しています（令和グリフは未対応）。
+* グリフを網羅しています（Glyphs 2用は令和グリフなし）。
     * グリフ幅を 1000/600/500 の3つに分けています。
     * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ。
 * 「〓」をコンポーネント配置してあります（空白文字を除く）。        
 * .rotatグリフにはベースグリフをコンポーネント配置してあります。
-    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。
-    * ただし、vertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。
-    * vertWidthは、[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で一括に設定できます。
+    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。ただしvertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で設定してください。
 #### Templates_AJ1-3の注意点
 * 禁止：グリフを削除したり追加したりしてはいけません。
 * 禁止：グリフ名を変更してはいけません。
 * 禁止：OpenTypeフィーチャーを設定してはいけません。
-    * フォント書出時にGlyphsが自動的に仕込むので、それにまかせてください。
+    * Glyphs 2用はフォント書出時にGlyphsが自動的に仕込むので、それにまかせてください。
+    * Glyphs 3用はフィーチャーを外部ファイル（gsubAdobe-Japan1-3-N.fea）から取り込んでいるので、それにまかせてください。
 * 禁止：glyphOrderを編集してはいけません。
-    * glyphOrderでCID順に並ぶようにしています。
 * 禁止：［グリフ情報を更新］をしてはいけません。
-    * ［グリフ情報を更新］を実行するとグリフ名が変更されてしまいます。
-* 書き出されたフォントにはROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
+* Glyphs 2用は書き出されたフォントのROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
+* Glyphs 3用はAj1-7に設定しています。それが正しいので、変更しないでください。
 
 
 ### Sample_AJ1-3(StdN)
@@ -42,6 +40,7 @@
 * [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
 
 ## GlyphsのAJ1用アプリ
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair%20AJ1%20Name%20Diff-1.0.0-8.tbz2)
@@ -51,6 +50,10 @@
 
 
 ## 更新履歴
+
+#### 2022.5.24
+Glyphs3.0.4用のAJ1-3テンプレートを追加した。
+
 #### 2021.12.22
 Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した。Glyphs3用のAdobe-Identity-0テンプレートを追加した。Glyphs2のダウンロードリンクを追加した。GlyphsのAJ1用アプリを追加した。
 
