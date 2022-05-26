@@ -33,23 +33,29 @@
 * 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです。
 * 要件等はTemplates_AJ1-3(StdN)と同じ。
 
-## Glyphs2 ダウンロードリンク
+## Glyphs ダウンロードリンク
 * [https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip](https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
+* [https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
 
 ## GlyphsのAJ1用アプリ
-* [Repair AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Repair-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名を修繕する（glyphsファイルを書き替える）
-* [Detect AJ1 Name Diff](https://tama-san.com/dl/download2.php?dir=files&fname=Detect-AJ1-Name-Diff-102.tbz2)
+* [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
+	* Glyphsのバージョンによって異なるAJ1用グリフ名を修繕する
+* [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
-
+* [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
+	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する。
+* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-212.tbz2)
+	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める。
 
 ## 更新履歴
+
+#### 2022.5.26
+Glyphs3用テンプレートのGSUBファイル名を変更した。
 
 #### 2022.5.24
 Glyphs3.0.4用のAJ1-3テンプレートを追加した。

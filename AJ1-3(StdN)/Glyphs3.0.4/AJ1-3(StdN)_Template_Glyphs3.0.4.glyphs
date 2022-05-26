@@ -9521,11 +9521,11 @@ name = DisableAllAutomaticBehaviour;
 value = 1;
 }
 );
-date = "2022-05-24 04:04:46 +0000";
+date = "2022-05-26 03:46:57 +0000";
 familyName = "New Font StdN";
 featurePrefixes = (
 {
-code = "include(gsubAdobe-Japan1-3-N.fea);";
+code = "include(aj13-gsub-reiwa-jp04-nicename.fea);";
 name = "AJ1-GSUB";
 }
 );
