@@ -6,7 +6,6 @@
     * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます。
     * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持しなければいけません。
 
-
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレートです。
     * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。下記のアプリ「Repair AJ1 Name Diff」でAJ1用グリフ名の修繕は可能です。
@@ -27,7 +26,6 @@
 * Glyphs 2用は書き出されたフォントのROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
 * Glyphs 3用はAj1-7に設定しています。それが正しいので、変更しないでください。
 
-
 ### Sample_AJ1-3(StdN)
 * Templates_AJ1-3(StdN)へ実際に字形パスを納めてみたサンプルです。
 * 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです。
@@ -43,10 +41,10 @@
 * [https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
 
 ## GlyphsのAJ1用アプリ
-* [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名を修繕する
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
+	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる。
+* [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
+	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する。
 * [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
 	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する。
 * [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-212.tbz2)
