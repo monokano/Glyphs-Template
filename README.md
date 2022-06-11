@@ -47,7 +47,7 @@
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する。
 * [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
 	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する。
-* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-2.2.0-31.tbz2)
+* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-2.2.0.tbz2)
 	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める。
 
 ## 更新履歴
