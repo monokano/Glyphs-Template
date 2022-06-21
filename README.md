@@ -39,6 +39,8 @@
 * [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
 * [https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
+* [https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip](https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip)
+* [https://updates.glyphsapp.com/Glyphs3.1-3133.zip](https://updates.glyphsapp.com/Glyphs3.1-3133.zip)
 
 ## GlyphsのAJ1用アプリ
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
