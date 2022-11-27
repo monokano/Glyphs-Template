@@ -38,9 +38,12 @@
 * [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
 * [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.8-1361.zip](https://updates.glyphsapp.com/Glyphs2.6.8-1361.zip)
+* [https://updates.glyphsapp.com/Glyphs2.6.9-1363.zip](https://updates.glyphsapp.com/Glyphs2.6.9-1363.zip)
 * [https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
 * [https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip](https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip)
 * [https://updates.glyphsapp.com/Glyphs3.1-3133.zip](https://updates.glyphsapp.com/Glyphs3.1-3133.zip)
+* [https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip](https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip)
 
 ## GlyphsのAJ1用アプリ
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
@@ -53,6 +56,9 @@
 	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める。
 
 ## 更新履歴
+
+#### 2022.11.28
+Glyphsのバージョンアップに合わせてファイル名を変更した。
 
 #### 2022.5.26
 Glyphs3用テンプレートのGSUBファイル名を変更した。
