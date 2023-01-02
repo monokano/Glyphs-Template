@@ -54,7 +54,7 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 * [https://updates.glyphsapp.com/Glyphs3.1-3133.zip](https://updates.glyphsapp.com/Glyphs3.1-3133.zip)
 * [https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip](https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip)
 
-## GlyphsのAJ1用アプリ
+## Glyphs＋AJ1用アプリ
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
@@ -63,6 +63,20 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する
 * [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-2.2.1-34.tbz2)
 	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める
+
+## TrueTypeで出力
+ここで公開しているGlyphsファイルはCFF用ですが、OpenType TrueTypeで出力することもできます。
+### 注意事項
+* TrueTypeにはname-keyed/cid-keyedの区別がありません
+* ROSはcid-keyed固有のものなので、TrueTypeにROSはありません。つまり「TrueTypeのAdobe-Japan1」は存在しません
+* 日本語フォントとして認識させるには、CodePageRangeにJIS/Japanがあれば良いです
+* Glyphs2用AJ1-3ファイルはエラーを回避できないので、TrueType出力はできません
+### 方法
+出力時にオートヒントでエラーになるのを回避する方法です。
+この結果、ヒンティングがどうなるのかはよく分かりません…。
+1. 「出力スタイル（インスタンス）」のカスタムパラメータに「TTFAutohint options」を追加
+2. 値をクリックして設定ウインドウを表示する
+3. 「記号フォント（Symbol Font）」のチェックボックスをONにして、OKボタンを押す
 
 ## 更新履歴
 
