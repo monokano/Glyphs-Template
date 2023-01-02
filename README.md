@@ -1,35 +1,44 @@
 # Glyphsテンプレート
 
+GlyphsでOpenType CFF（.otf）の日本語フォントを作るテンプレートです。
+
+OpenType CFFを日本語フォントとして認識させるには、以下の条件にすべて該当する必要があります。
+* cid-keyedである
+* ROSが「Adobe-Identity-0」か「Adobe-Japan1-x」である
+* CodePageRangeにJIS/Japanがある
+
+テンプレートは、この条件に該当するように仕込みをしたGlyphsファイルです。
+
 ### Template_Adobe-Identity-0
-* Adobe-Identity-0のテンプレートです。
-* 用意したグリフは「.notdef」「space」「X」の３つのみ。
-    * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます。
-    * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持しなければいけません。
+* Adobe-Identity-0のテンプレート
+* 用意したグリフは「.notdef」「space」「X」の３つのみ
+     * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持してください
+   * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます
 
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレートです。
-    * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレート（ファイル名に明記しています）を使用してください。下記のアプリ「Repair AJ1 Name Diff」でAJ1用グリフ名の修繕は可能です。
+    * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください
 * グリフを網羅しています（Glyphs 2用は令和グリフなし）。
-    * グリフ幅を 1000/600/500 の3つに分けています。
-    * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ。
-* 「〓」をコンポーネント配置してあります（空白文字を除く）。        
+    * グリフ幅を 1000/600/500 の3つに分けています
+    * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ
+* 「〓」をコンポーネント配置してあります（空白文字を除く）。 
 * .rotatグリフにはベースグリフをコンポーネント配置してあります。
-    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。ただしvertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で設定してください。
+    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。ただしvertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で設定してください
 #### Templates_AJ1-3の注意点
-* 禁止：グリフを削除したり追加したりしてはいけません。
-* 禁止：グリフ名を変更してはいけません。
-* 禁止：OpenTypeフィーチャーを設定してはいけません。
-    * Glyphs 2用はフォント書出時にGlyphsが自動的に仕込むので、それにまかせてください。
-    * Glyphs 3用はGSUBフィーチャーを外部ファイルから取り込んでいるので、それにまかせてください。
-* 禁止：glyphOrderを編集してはいけません。
-* 禁止：［グリフ情報を更新］をしてはいけません。
-* Glyphs 2用は書き出されたフォントのROS情報が間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
-* Glyphs 3用はAj1-7に設定しています。それが正しいので、変更しないでください。
+* 禁止：グリフの削除や追加をしないでください
+* 禁止：グリフ名を変更しないでください
+* 禁止：OpenTypeフィーチャーを設定しないでください
+    * Glyphs 2用はフォント書出時にGlyphsが自動的に仕込むので、それにまかせてください
+    * Glyphs 3用はGSUBフィーチャーを外部ファイルから取り込んでいるので、それにまかせてください
+* 禁止：glyphOrderを編集しないでください
+* 禁止：［グリフ情報を更新］をしないでください
+* Glyphs 2用は、書き出されたフォントのROSが間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…。
+* Glyphs 3用は、Aj1-7に設定しています。それが正しいので変更しないでください
 
 ### Sample_AJ1-3(StdN)
-* Templates_AJ1-3(StdN)へ実際に字形パスを納めてみたサンプルです。
-* 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです。
-* 要件等はTemplates_AJ1-3(StdN)と同じ。
+* Templates_AJ1-3(StdN)へ実際に字形パスを納めてみたサンプル
+* 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです
+* 要件等はTemplates_AJ1-3(StdN)と同じ
 
 ## Glyphs ダウンロードリンク
 * [https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
@@ -47,15 +56,21 @@
 
 ## GlyphsのAJ1用アプリ
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる。
+	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する。
+	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する
 * [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
-	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する。
+	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する
 * [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-2.2.1-34.tbz2)
-	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める。
+	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める
 
 ## 更新履歴
+
+#### 2023.1.2
+AI0テンプレートのunicodeRangesをcodePageRangesに変更した。
+Glyphs3用AJ1テンプレートにcodePageRangesを追加した。G3でJIS/Japanが自動設定されないので。
+Glyphs3用AJ1サンプルを追加した。
+フィル名をなるべく簡潔にした。
 
 #### 2022.11.28
 Glyphsのバージョンアップに合わせてファイル名を変更した。
