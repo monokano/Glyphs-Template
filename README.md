@@ -68,9 +68,9 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 
 #### 2023.1.2
 AI0テンプレートのunicodeRangesをcodePageRangesに変更した。
-Glyphs3用AJ1テンプレートにcodePageRangesを追加した。G3でJIS/Japanが自動設定されないので。
+Glyphs3用AJ1テンプレートにcodePageRangesを追加した（G3でJIS/Japanが自動設定されないので）。
 Glyphs3用AJ1サンプルを追加した。
-フィル名をなるべく簡潔にした。
+ファイル名をなるべく簡潔にした。
 
 #### 2022.11.28
 Glyphsのバージョンアップに合わせてファイル名を変更した。
