@@ -66,38 +66,41 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 
 ## 更新履歴
 
-#### 2023.1.2
-AI0テンプレートのunicodeRangesをcodePageRangesに変更した。
-Glyphs3用AJ1テンプレートにcodePageRangesを追加した（G3でJIS/Japanが自動設定されないので）。
-Glyphs3用AJ1サンプルを追加した。
-ファイル名をなるべく簡潔にした。
+2023.1.2
+* AI0テンプレートのunicodeRangesをcodePageRangesに変更した
+* Glyphs3用AJ1テンプレートにcodePageRangesを追加した（G3でJIS/Japanが自動設定されないので）
+* Glyphs3用AJ1サンプルを追加した
+* ファイル名をなるべく簡潔にした
 
-#### 2022.11.28
-Glyphsのバージョンアップに合わせてファイル名を変更した。
+2022.11.28
+* Glyphsのバージョンアップに合わせてフォルダ名を変更した
 
-#### 2022.5.26
-Glyphs3用テンプレートのGSUBファイル名を変更した。
+2022.5.26
+* Glyphs3用テンプレートのGSUBファイル名を変更した
 
-#### 2022.5.24
-Glyphs3.0.4用のAJ1-3テンプレートを追加した。
+2022.5.24
+* Glyphs3.0.4用のAJ1-3テンプレートを追加した
 
-#### 2021.12.22
-Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した。Glyphs3用のAdobe-Identity-0テンプレートを追加した。Glyphs2のダウンロードリンクを追加した。GlyphsのAJ1用アプリを追加した。
+2021.12.22
+* Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した
+* Glyphs3用のAdobe-Identity-0テンプレートを追加した
+* Glyphs2のダウンロードリンクを追加した
+* GlyphsのAJ1用アプリを追加した
 
-#### 2020.11.20
-ファイル名に使用可能なGlyphsバージョンの範囲を明記した。
+2020.11.20
+* フォルダ名に使用可能なGlyphsバージョンの範囲を明記した
 
-#### 2020.10.3
-Sample_AJ1-3(StdN)を追加した。
+2020.10.3
+* Sample_AJ1-3(StdN)を追加した
 
-#### 2020.9.28
-Adobe-Japan1用を1-3のみにして、グリフに「〓」を仕込んだ。
+2020.9.28
+* Adobe-Japan1用を1-3のみにして、グリフに「〓」を仕込んだ
 
-#### 2019.12.17
-「Templates_AJ1_Glyphs2.6.3-1271」を追加。なお、Glyphs2.6.2でAJ1用nice nameの一部が変更されています。
+2019.12.17
+* 「Templates_AJ1_Glyphs2.6.3-1271」を追加。なお、Glyphs2.6.2でAJ1用nice nameの一部が変更されています
 
-#### 2019.9.14　Template_Adobe-Identity-0
-Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加した。
+2019.9.14　Template_Adobe-Identity-0
+* Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加した
 
-#### 2019.8.16
-フォント書き出し時に結合文字の文字コードを持つグリフの幅をGlyphsが自動的にゼロにしてしまう仕様を回避するため、マスターのカスタムパラメータに「DisableAllAutomaticBehaviour」を追加した。
+2019.8.16
+* フォント書き出し時に結合文字の文字コードを持つグリフの幅をGlyphsが自動的にゼロにしてしまう仕様を回避するため、マスターのカスタムパラメータに「DisableAllAutomaticBehaviour」を追加した
