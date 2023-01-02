@@ -9386,7 +9386,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>AJ1-4</string>
+		<string>AJ1-4（一部）</string>
 		<key>list</key>
 		<array>
 			<string>euro</string>
@@ -9537,12 +9537,11 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>AJ1-7</string>
+		<string>AJ1-7（一部）</string>
 		<key>list</key>
 		<array>
 			<string>reiwaEra</string>
 		</array>
 	</dict>
-
 </array>
 </plist>

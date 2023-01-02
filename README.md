@@ -80,6 +80,9 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 
 ## 更新履歴
 
+2023.1.3
+* 「CustomFilter AJ1.plist」をブラッシュアップ
+
 2023.1.2
 * AI0テンプレートのunicodeRangesをcodePageRangesに変更した
 * Glyphs3用AJ1テンプレートにcodePageRangesを追加した（G3でJIS/Japanが自動設定されないので）
