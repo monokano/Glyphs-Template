@@ -12,8 +12,9 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 ### Template_Adobe-Identity-0
 * Adobe-Identity-0のテンプレート
 * 用意したグリフは「.notdef」「space」「X」の３つのみ
-     * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持してください
-   * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます
+    * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持してください
+    * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます
+    * Glyphs3用にはvmtxが自動生成されるように「for-vmtx」グリフを仕込んでいます
 
 ### Templates_AJ1-3(StdN)
 * Adobe-Japan1-3(StdN)のテンプレート
@@ -79,6 +80,9 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 3. 「記号フォント（Symbol Font）」のチェックボックスをONにして、OKボタンを押す
 
 ## 更新履歴
+
+2023.1.4
+* Glyphs3がvmtxを自動生成しない場合があるので、自動生成されるようにAI0のGlyphs3用テンプレートに縦幅が1000ではないグリフを追加した。
 
 2023.1.3
 * 「CustomFilter AJ1.plist」をブラッシュアップ
