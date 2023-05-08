@@ -56,15 +56,23 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 * [https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip](https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip)
 * [https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip](https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip)
 
-## Glyphs＋AJ1用アプリ
+## フォント用デスクトップアプリ
+### Glyphs＋AJ1
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
 * [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
 	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する
 * [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
 	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する
-* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-2.2.1-34.tbz2)
+* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-241-40.zip)
 	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める
+### 検証
+* [FontBBox Viewer](https://tama-san.com/fontbbox-viewer/)
+	* フォントファイルからFontBBoxや各種メトリックを抽出してグラフィカルに表示する
+* [Font Lookie 5](https://tama-san.com/dl/files/Font-Lookie-5-510.zip)
+	* フォントファイルから各種テーブルを抽出して表示する
+* [Naming Table Viewer](https://tama-san.com/dl/files/Naming-Table-Viewer-201.zip)
+	* フォントファイルからnameテーブルを抽出してリスト表示する
 
 ## TrueTypeで出力
 ここで公開しているGlyphsファイルはCFF用ですが、OpenType TrueTypeで出力することもできます。
@@ -84,13 +92,14 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 
 2323.5.9
 * Glyphsのバージョンに合わせてフォルダ名を変更した
+* フォント用アプリのリンクを更新整理した
 
 2023.1.12
-* AJ1用のカスタムフィルターに誤りがあったのを修正。
-* Glyphs3用AJ1のglyphOrderにセクションヘッダを追記。
+* AJ1用のカスタムフィルターに誤りがあったのを修正した
+* Glyphs3用AJ1のglyphOrderにセクションヘッダを追記した
 
 2023.1.4
-* Glyphs3がvmtxを自動生成しない場合があるので、自動生成されるようにAI0のGlyphs3用テンプレートに縦幅が1000ではないグリフ「for-vmtx」を追加した。
+* Glyphs3がvmtxを自動生成しない場合があるので、自動生成されるようにAI0のGlyphs3用テンプレートに縦幅が1000ではないグリフ「for-vmtx」を追加した
 
 2023.1.3
 * 「CustomFilter AJ1.plist」をブラッシュアップ
