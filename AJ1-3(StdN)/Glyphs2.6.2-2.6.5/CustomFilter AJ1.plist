@@ -9482,6 +9482,13 @@
 			<string>uni8258</string>
 			<string>uni9D09</string>
 			<string>uniFA11</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>AJ1-5（一部）</string>
+		<key>list</key>
+		<array>
 			<string>uni7462</string>
 			<string>uni7D5C</string>
 			<string>uniFA24</string>
@@ -9530,6 +9537,13 @@
 			<string>uniF929</string>
 			<string>uniFA15</string>
 			<string>uni9755</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>AJ1-6（一部）</string>
+		<key>list</key>
+		<array>
 			<string>uniFA40</string>
 			<string>uniFA20</string>
 			<string>uni8B7F</string>

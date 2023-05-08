@@ -54,6 +54,7 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 * [https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip](https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip)
 * [https://updates.glyphsapp.com/Glyphs3.1-3133.zip](https://updates.glyphsapp.com/Glyphs3.1-3133.zip)
 * [https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip](https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip)
+* [https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip](https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip)
 
 ## Glyphs＋AJ1用アプリ
 * [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
@@ -81,6 +82,13 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 
 ## 更新履歴
 
+2323.5.9
+* Glyphsのバージョンに合わせてフォルダ名を変更した
+
+2023.1.12
+* AJ1用のカスタムフィルターに誤りがあったのを修正。
+* Glyphs3用AJ1のglyphOrderにセクションヘッダを追記。
+
 2023.1.4
 * Glyphs3がvmtxを自動生成しない場合があるので、自動生成されるようにAI0のGlyphs3用テンプレートに縦幅が1000ではないグリフ「for-vmtx」を追加した。
 
@@ -94,7 +102,7 @@ OpenType CFFを日本語フォントとして認識させるには、以下の�
 * ファイル名をなるべく簡潔にした
 
 2022.11.28
-* Glyphsのバージョンアップに合わせてフォルダ名を変更した
+* Glyphsのバージョンに合わせてフォルダ名を変更した
 
 2022.5.26
 * Glyphs3用テンプレートのGSUBファイル名を変更した
