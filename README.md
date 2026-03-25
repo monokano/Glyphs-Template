@@ -2,143 +2,42 @@
 
 GlyphsでOpenType CFF（.otf）の日本語フォントを作るテンプレートです。
 
-OpenType CFFを日本語フォントとして認識させるには、以下の条件にすべて該当する必要があります。
-* cid-keyedである
-* ROSが「Adobe-Identity-0」か「Adobe-Japan1-x」である
-* CodePageRangeにJIS/Japanがある
+日本語フォントとして認識させるには、以下の条件をすべて満たす必要があります。
 
-テンプレートは、この条件に該当するように仕込みをしたGlyphsファイルです。
+* cid-keyed である
+* ROS が「Adobe-Identity-0」か「Adobe-Japan1-x」である
+* CodePageRange に JIS/Japan がある
 
 ### Template_Adobe-Identity-0
-* Adobe-Identity-0のテンプレート
-* 用意したグリフは「.notdef」「space」「X」の３つのみ
-    * glyphOrderで「.notdef」「space」が先頭から並ぶようにしています。glyphOrderを編集する際は、この２つが必ず最初になるように維持してください
-    * 「X」はIllustratorの縦組みでズレないようにする目的で仕込んでいます
-    * Glyphs3用にはvmtxが自動生成されるように「for-vmtx」グリフを仕込んでいます
 
-### Templates_AJ1-3(StdN)
-* Adobe-Japan1-3(StdN)のテンプレート
-    * Glyphsはアップデート時にAJ1用のグリフ名を変更することがあります。Glyphsのバージョンに合ったテンプレートを使用してください
-* グリフを網羅しています（Glyphs 2用は令和グリフなし）
-    * グリフ幅を 1000/600/500 の3つに分けています
-    * 1000は全角グリフ。600は欧文グリフ。500は半角幅グリフ
-* 「〓」をコンポーネント配置してあります（空白文字を除く）
-* .rotatグリフにはベースグリフをコンポーネント配置してあります
-    * ベースグリフを編集すると、自動的に.rotatグリフへ反映されます。ただしvertWidth（縦組時の縦方向のグリフ幅）だけは反映されません。[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts)の「Set vertWidth for vrt2 Glyph」で設定してください
-#### Templates_AJ1-3の注意点
-* 禁止：グリフの削除や追加をしないでください
-* 禁止：グリフ名を変更しないでください
-* 禁止：OpenTypeフィーチャーを設定しないでください
-    * Glyphs 2用はフォント書出時にGlyphsが自動的に仕込むので、それにまかせてください
-    * Glyphs 3用はGSUBフィーチャーを外部ファイルから取り込んでいるので、それにまかせてください
-* 禁止：glyphOrderを編集しないでください
-* 禁止：［グリフ情報を更新］をしないでください
-* Glyphs 2用は、書き出されたフォントのROSが間違っている問題があります。「[GlyphsのAJ1の問題と対処 - 2. ROS編](https://gist.github.com/monokano/a3cf2992b8246720c5edc9abe12a65af)」で説明していますが、簡便な対処方法が今のところないので、そのままでもいいかなぁ…
-* Glyphs 3用は、Aj1-7に設定しています。それが正しいので変更しないでください
+Adobe-Identity-0 のテンプレートです。用意したグリフは `.notdef` `space` `X` の3つのみ。
 
-### Sample_AJ1-3(StdN)
-* Templates_AJ1-3(StdN)へ実際に字形パスを納めてみたサンプル
-* 字形パスはIPAex明朝を使用しています。IPAex明朝になかったグリフは〓のままです
-* 要件等はTemplates_AJ1-3(StdN)と同じ
+* glyphOrder は `.notdef` `space` が必ず先頭になるよう維持してください
+* `X` は Illustrator の縦組みズレ対策（Illustrator 2025 (29) 以降は不要）
+* マスターのカスタムパラメータに `DisableAllAutomaticBehaviour` を追加（結合文字グリフの幅自動ゼロ化を回避）
+* マスターのカスタムパラメータに `Export vmtx Table` を追加（全グリフの天地幅が UPM と同一の場合に vmtx が生成されない問題を回避）
 
-## Glyphs ダウンロードリンク
-* [https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip](https://updates.glyphsapp.com/Glyphs2.6.2-1268.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip](https://updates.glyphsapp.com/Glyphs2.6.3-1271.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip](https://updates.glyphsapp.com/Glyphs2.6.4-1286.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip](https://updates.glyphsapp.com/Glyphs2.6.5-1342.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip](https://updates.glyphsapp.com/Glyphs2.6.6-1350.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip](https://updates.glyphsapp.com/Glyphs2.6.7-1359.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.8-1361.zip](https://updates.glyphsapp.com/Glyphs2.6.8-1361.zip)
-* [https://updates.glyphsapp.com/Glyphs2.6.9-1363.zip](https://updates.glyphsapp.com/Glyphs2.6.9-1363.zip)
-* [https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip](https://updates.glyphsapp.com/Glyphs3.0.4-3108.zip)
-* [https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip](https://updates.glyphsapp.com/Glyphs3.0.5-3131.zip)
-* [https://updates.glyphsapp.com/Glyphs3.1-3133.zip](https://updates.glyphsapp.com/Glyphs3.1-3133.zip)
-* [https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip](https://updates.glyphsapp.com/Glyphs3.1.1-3148.zip)
-* [https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip](https://updates.glyphsapp.com/Glyphs3.1.2-3151.zip)
+### Templates_AJ1-3 (StdN)
 
-## フォント用デスクトップアプリ
-### Glyphs＋AJ1
-* [Detect AJ1 Name Diff](https://tama-san.com/dl/files/Detect-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べる
-* [Repair AJ1 Name Diff](https://tama-san.com/dl/files/Repair-AJ1-Name-Diff-102.tbz2)
-	* Glyphsのバージョンによって異なるAJ1用グリフ名の差分を調べ、glyphsファイルを修繕する
-* [Convert AJ1 GSUB for Glyphs](https://tama-san.com/dl/files/Convert-AJ1-GSUB-for-Glyphs-100.tbz2)
-	* Adobeが公開しているAJ1用GSUBファイルの「\cid」表記をnice nameに全置換する
-* [AJ1 Explorer](https://tama-san.com/dl/files/AJ1-Explorer-241-40.zip)
-	* AJ1のグリフの各種情報を閲覧する。GlyphsのAJ1用nice nameも取り込める
-### 検証
-* [FontBBox Viewer](https://tama-san.com/fontbbox-viewer/)
-	* フォントファイルからFontBBoxや各種メトリックを抽出してグラフィカルに表示する
-* [Font Lookie 5](https://tama-san.com/dl/files/Font-Lookie-5-510.zip)
-	* フォントファイルから各種テーブルを抽出して表示する
-* [Naming Table Viewer](https://tama-san.com/dl/files/Naming-Table-Viewer-201.zip)
-	* フォントファイルからnameテーブルを抽出してリスト表示する
+Adobe-Japan1-3 (StdN) のテンプレートです。グリフ幅は全角 1000 / 欧文 600 / 半角 500 の3種。
 
-## TrueTypeで出力
-ここで公開しているGlyphsファイルはCFF用ですが、OpenType TrueTypeで出力することもできます。
-### 注意事項
-* TrueTypeにはname-keyed/cid-keyedの区別がありません
-* ROSはcid-keyed固有のものなので、TrueTypeにROSはありません。つまり「TrueTypeのAdobe-Japan1」は存在しません
-* 日本語フォントとして認識させるには、CodePageRangeにJIS/Japanがあれば良いです
-* Glyphs2用AJ1-3ファイルはエラーを回避できないので、TrueType出力はできません
-### 方法
-出力時にオートヒントでエラーになるのを回避する方法です。
-この結果、ヒンティングがどうなるのかはよく分かりません…。
-1. 「出力スタイル（インスタンス）」のカスタムパラメータに「TTFAutohint options」を追加
-2. 値をクリックして設定ウインドウを表示する
-3. 「記号フォント（Symbol Font）」のチェックボックスをONにして、OKボタンを押す
+* 空白文字を除くすべてのグリフに「〓」をコンポーネント配置
+* `.rotat` グリフにはベースグリフをコンポーネント配置（編集が自動反映される）
+* `vertWidth` のみ自動反映されません。[Glyphs-Scripts](https://github.com/monokano/Glyphs-Scripts) の `vrt2 Glyph_Set vertWidth.py` で設定してください
+* `Template_Empty` は「〓」なしの空グリフ版です
+
+**禁止事項：**
+
+* グリフの削除・追加・改名
+* OpenType フィーチャーの手動設定
+* glyphOrder の編集
+* 「グリフ情報を更新」の実行
+* ROS の変更（AJ1-7 設定が正しい）
+
+## リンク
+
+* [Glyphs Versions](https://florianpircher.com/glyphs/versions/)
 
 ## 更新履歴
 
-2023.5.9
-* Glyphsのバージョンに合わせてフォルダ名を変更した
-* フォント用アプリのリンクを更新整理した
-
-2023.1.12
-* AJ1用のカスタムフィルターに誤りがあったのを修正した
-* Glyphs3用AJ1のglyphOrderにセクションヘッダを追記した
-
-2023.1.4
-* Glyphs3がvmtxを自動生成しない場合があるので、自動生成されるようにAI0のGlyphs3用テンプレートに縦幅が1000ではないグリフ「for-vmtx」を追加した
-
-2023.1.3
-* 「CustomFilter AJ1.plist」をブラッシュアップ
-
-2023.1.2
-* AI0テンプレートのunicodeRangesをcodePageRangesに変更した
-* Glyphs3用AJ1テンプレートにcodePageRangesを追加した（G3でJIS/Japanが自動設定されないので）
-* Glyphs3用AJ1サンプルを追加した
-* ファイル名をなるべく簡潔にした
-
-2022.11.28
-* Glyphsのバージョンに合わせてフォルダ名を変更した
-
-2022.5.26
-* Glyphs3用テンプレートのGSUBファイル名を変更した
-
-2022.5.24
-* Glyphs3.0.4用のAJ1-3テンプレートを追加した
-
-2021.12.22
-* Glyphs2.6.6-2.6.7用のAJ1-3テンプレートを追加した
-* Glyphs3用のAdobe-Identity-0テンプレートを追加した
-* Glyphs2のダウンロードリンクを追加した
-* GlyphsのAJ1用アプリを追加した
-
-2020.11.20
-* フォルダ名に使用可能なGlyphsバージョンの範囲を明記した
-
-2020.10.3
-* Sample_AJ1-3(StdN)を追加した
-
-2020.9.28
-* Adobe-Japan1用を1-3のみにして、グリフに「〓」を仕込んだ
-
-2019.12.17
-* 「Templates_AJ1_Glyphs2.6.3-1271」を追加。なお、Glyphs2.6.2でAJ1用nice nameの一部が変更されています
-
-2019.9.14　Template_Adobe-Identity-0
-* Adobeアプリで日本語フォントとして認識されるようにunicodeRangesを追加した
-
-2019.8.16
-* フォント書き出し時に結合文字の文字コードを持つグリフの幅をGlyphsが自動的にゼロにしてしまう仕様を回避するため、マスターのカスタムパラメータに「DisableAllAutomaticBehaviour」を追加した
+* **2026.3.25** Glyphs 3.4.1 (3436) 用に一新。旧ファイルを「OLD」に移動
