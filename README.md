@@ -2,15 +2,9 @@
 
 GlyphsでOpenType CFF（.otf）の日本語フォントを作るテンプレートです。
 
-日本語フォントとして認識させるには、以下の条件をすべて満たす必要があります。
-
-* cid-keyed である
-* ROS が「Adobe-Identity-0」か「Adobe-Japan1-x」である
-* CodePageRange に JIS/Japan がある
-
 ### Template_Adobe-Identity-0
 
-Adobe-Identity-0 のテンプレートです。用意したグリフは `.notdef` `space` `X` の3つのみ。
+Adobe-Identity-0 のテンプレート。用意したグリフは `.notdef` `space` `X` の3つのみ。
 
 * glyphOrder は `.notdef` `space` が必ず先頭になるよう維持してください
 * `X` は Illustrator の縦組みズレ対策（Illustrator 2025 (29) 以降は不要）
@@ -19,7 +13,7 @@ Adobe-Identity-0 のテンプレートです。用意したグリフは `.notdef
 
 ### Templates_AJ1-3 (StdN)
 
-Adobe-Japan1-3 (StdN) のテンプレートです。グリフ幅は全角 1000 / 欧文 600 / 半角 500 の3種。
+Adobe-Japan1-3 (StdN) のテンプレート。グリフ幅は全角 1000 / 欧文 600 / 半角 500 の3種。
 
 * 空白文字を除くすべてのグリフに「〓」をコンポーネント配置
 * `.rotat` グリフにはベースグリフをコンポーネント配置（編集が自動反映される）
